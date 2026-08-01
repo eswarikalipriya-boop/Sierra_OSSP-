@@ -1,1 +1,12 @@
-
+Last login: Thu Jul 30 11:04:58 on ttys000
+eshavarmaalluri@Eshas-MacBook-Air ~ % mkdir linux_task4
+mkdir: linux_task4: File exists
+eshavarmaalluri@Eshas-MacBook-Air ~ % cd linux_task4
+eshavarmaalluri@Eshas-MacBook-Air linux_task4 % cat > public.txt
+This is a public file.
+eshavarmaalluri@Eshas-MacBook-Air linux_task4 % cat > private.txt
+This is a private file.%                                                        eshavarmaalluri@Eshas-MacBook-Air linux_task4 % cat > script.sh
+printf "Hello, world!\n"%                                                       eshavarmaalluri@Eshas-MacBook-Air linux_task4 % chmod +x script.sh
+eshavarmaalluri@Eshas-MacBook-Air linux_task4 % ./script.sh
+Hello, world!
+eshavarmaalluri@Eshas-MacBook-Air linux_task4 %
