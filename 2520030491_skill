@@ -1,1 +1,31 @@
+Last login: Sat Aug  1 15:25:47 on ttys002
+apple@APPLEs-MacBook-Pro-6 ~ % mkdir permission_lab
+mkdir: permission_lab: File exists
+apple@APPLEs-MacBook-Pro-6 ~ % cd permission_lab
+apple@APPLEs-MacBook-Pro-6 permission_lab % cat > test.txt   
+This is a test file.
+apple@APPLEs-MacBook-Pro-6 permission_lab % ls -l
+total 8
+-rw-r--r--  1 apple  staff   0 30 Jul 10:12 teext.txt
+-rw-r--r--  1 apple  staff  21  1 Aug 15:29 test.txt
+apple@APPLEs-MacBook-Pro-6 permission_lab % chmod u-r test.txt
+apple@APPLEs-MacBook-Pro-6 permission_lab % cat test.txt
+cat: test.txt: Permission denied
+apple@APPLEs-MacBook-Pro-6 permission_lab % chmod u+r test.txt
+apple@APPLEs-MacBook-Pro-6 permission_lab % chmod u-w test.txt
+apple@APPLEs-MacBook-Pro-6 permission_lab % cat >> test.txt
+zsh: permission denied: test.txt
+apple@APPLEs-MacBook-Pro-6 permission_lab % chmod u+w test.txt
+apple@APPLEs-MacBook-Pro-6 permission_lab % chmod u-x test.txt
+apple@APPLEs-MacBook-Pro-6 permission_lab % ./test.txt
+zsh: permission denied: ./test.txt
+apple@APPLEs-MacBook-Pro-6 permission_lab % ls -l test.txt
+-rw-r--r--  1 apple  staff  21  1 Aug 15:29 test.txt
+apple@APPLEs-MacBook-Pro-6 permission_lab % cd permission_lab
+cd: no such file or directory: permission_lab
+apple@APPLEs-MacBook-Pro-6 permission_lab % ./test.txt
+zsh: permission denied: ./test.txt
+apple@APPLEs-MacBook-Pro-6 permission_lab % 
+
+
 
