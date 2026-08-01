@@ -1,1 +1,16 @@
+Last login: Thu Jul 30 11:00:51 on ttys000
+apple@APPLEs-MacBook-Pro-6 ~ % mkdir linux_task4
+mkdir: linux_task4: File exists
+apple@APPLEs-MacBook-Pro-6 ~ % cd linux_task4
+apple@APPLEs-MacBook-Pro-6 linux_task4 % linux_task4 % cat > public.txt
+zsh: command not found: linux_task4
+apple@APPLEs-MacBook-Pro-6 linux_task4 % cat > public.txt
+This is a public file.
+apple@APPLEs-MacBook-Pro-6 linux_task4 % cat > private.txt
+This is a private file.%                                                                                                                                                                                  apple@APPLEs-MacBook-Pro-6 linux_task4 % cat > script.sh
+printf "Hello, World!\n"%                                                                                                                                                                                 apple@APPLEs-MacBook-Pro-6 linux_task4 % chmod +x script.sh
+apple@APPLEs-MacBook-Pro-6 linux_task4 % ./script.sh
+Hello, World!
+apple@APPLEs-MacBook-Pro-6 linux_task4 % 
+
 
