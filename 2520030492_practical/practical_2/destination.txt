@@ -1,0 +1,3 @@
+This is Practical 2.
+This file is copied using open, read, write and close system calls.
+
